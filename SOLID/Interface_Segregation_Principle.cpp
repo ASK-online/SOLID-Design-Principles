@@ -20,7 +20,7 @@ class My_Calorie : public Calorie{
     void printCalorieProgram() override;
 };
 
-class Daily_Routine : public Workout , Calorie{
+class Daily_Routine : public Workout , public Calorie{
   public:
     void printWorkoutProgram() override;
     void printCalorieProgram() override;
